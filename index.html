@@ -138,12 +138,12 @@
         </div>
         <div class="tab-pal2" v-show="curId===1">
             <ul>
-                <li v-for="(item,key) in pal2"><a :href="item">{{key}}</a></li>
+                <li v-for="item in pal2"><a :href="item.url">{{item.key}}</a></li>
             </ul>
         </div>
         <div class="tab-pal3" v-show="curId===2">
             <ul>
-                <li v-for="(item,key) in pal3"><a :href="item">{{key}}</a></li>
+                <li v-for="item in pal3"><a :href="item.url">{{item.key}}</a></li>
             </ul>
         </div>
     </div>
@@ -178,18 +178,35 @@
                  "延   庆：61112315",
                  "石景山：88912315"
 			],
-			pal2:{
-				"空调漏水将地板泡坏是否可以投诉？":"http://mp.weixin.qq.com/s/pmXa88JlG_AaGfigd2Kd9Q",
-				"没有约定保修期怎么办？":"http://mp.weixin.qq.com/s/uYuyAHz3CI-Dta81BGrxWw",
-				"手机的发票丢失还能保修吗？":"http://mp.weixin.qq.com/s/pmXa88JlG_AaGfigd2Kd9Q",
-				"手机送修后可以要求维修点提供备用机吗？":"http://mp.weixin.qq.com/s/jV8cVNaLX6ew6nA4yzFtew" 
+			pal2:[
+				{
+					key:"空调漏水将地板泡坏是否可以投诉？",url:"http://mp.weixin.qq.com/s/pmXa88JlG_AaGfigd2Kd9Q"
 				},
-			pal3:{
-				"螃蟹来“袭”，消费有度":"http://mp.weixin.qq.com/s/HcH-erege4qv4btqgeKlSg",
-				"热水器消费提示":"http://mp.weixin.qq.com/s/GYF8bTwH5D2XRYCTQWQrgg",
-				"消费有风险 单方毁约可维权":"http://mp.weixin.qq.com/s/WPwvFKlYl17rt4uNUDbrYA",
-				"衣服遭破相，维权获赔偿":"http://mp.weixin.qq.com/s/2ukPz0E2lyv9JoamcDOWUQ"
-			}
+				{
+					key:"没有约定保修期怎么办？",url:"http://mp.weixin.qq.com/s/uYuyAHz3CI-Dta81BGrxWw"
+				},
+				{
+					key:"手机的发票丢失还能保修吗？",url:"http://mp.weixin.qq.com/s/pmXa88JlG_AaGfigd2Kd9Q"
+				},
+				{
+					key:"手机送修后可以要求维修点提供备用机吗？",url:"http://mp.weixin.qq.com/s/jV8cVNaLX6ew6nA4yzFtew" 
+				}
+				],
+			pal3:[
+
+				{
+					key:"空调漏水将地板泡坏是否可以投诉？",url:"http://mp.weixin.qq.com/s/pmXa88JlG_AaGfigd2Kd9Q"
+				},
+				{
+					key:"没有约定保修期怎么办？",url:"http://mp.weixin.qq.com/s/uYuyAHz3CI-Dta81BGrxWw"
+				},
+				{
+					key:"手机的发票丢失还能保修吗？",url:"http://mp.weixin.qq.com/s/pmXa88JlG_AaGfigd2Kd9Q"
+				},
+				{
+					key:"手机送修后可以要求维修点提供备用机吗？",url:"http://mp.weixin.qq.com/s/jV8cVNaLX6ew6nA4yzFtew" 
+				}
+				],
 		},
 		methos:{
 		
