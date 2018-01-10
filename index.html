@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>北京工商局</title>
+    <meta content="telephone=no" name="format-detection">
+    <script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(normal,e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=normal?1:1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=normal?"50px": a/2*s*n+"px"},e.exports=t["default"]}]);  flex(false,100, 1);</script>
+
+    <style>
+        html::-webkit-scrollbar,
+        body::-webkit-scrollbar{
+            width:0;
+            height:0;
+            display: none;/*隐藏滚轮*/
+        }
+        /*===== 清除默认的margin的属性值 =====*/
+        body,
+        blockquote,
+        dd,
+        dl,
+        figure,
+        form,
+        p,
+        pre,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {margin:0;}
+
+        /*===== 统一设置列表的margin和padding，以及列表表形式 =====*/
+        menu,
+        ul,
+        ol {list-style:none;margin:0;padding:0;}
+
+        /*===== 全局定义字体以及页面背景 =====*/
+        body {line-height:1.5;background-color:#FFFFFF;}
+        body,h1,h2,h3,h4,h5,h6,input,button,select,textarea {font-size: 18px;} /* 设置字体大小 */
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"] {font-size: 16px;} /* 设置字体大小，这部分跟前面写在一起，IE6中会无效 */
+
+        /*===== 字体控制 =====*/
+        body,
+        input,
+        button,
+        select,
+        optgroup,
+        option,
+        textarea,
+        pre {font-family: 'Microsoft YaHei',Arial, Roboto, 'Droid Sans', 'Hiragino Sans GB',  'Simsun', STXihei, 'sans-serif';}
+
+        /*===== 设置iframe的背景色以及去除个别浏览器iframe底部的几个像素 =====*/
+        iframe {background-color:#FFFFFF;vertical-align:middle;}
+
+        /*===== 设置文本链接样式 =====*/
+        a {color:#000000; text-decoration: none;}
+        a:hover {text-decoration:underline;color:#FF0000;}
+
+        /*===== 去除个别浏览器图片底部的几个像素，以及设置图片形式链接无边框 =====*/
+        img {vertical-align:middle;}
+        a img {border:0 none;}
+
+        /*===== 设置表单元素的样式 =====*/
+        fieldset {margin:0;padding:0;}
+        legend {color:windowtext;} /* 设置表单域部分的字体颜色为系统窗体文本颜色 */
+        button,
+        input.ie6 {overflow:visible;padding:.1em .25em;cursor:pointer;} /* 尽量统一按钮的大小，鉴于IE6不支持【属性选择符】，所以使用一个类名来控制 */
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"] {overflow:visible;padding:.1em .25em;cursor:pointer;} /* 尽量同意按钮的大小，如果采用input方式做的按钮 */
+        input[type="text"],
+        select,
+        textarea {background-color:#FFFFFF;} /* 统一文本输入框、下拉、文本框的背景色，避免被用户设置系统颜色而破坏页面色彩 */
+        select {border:1px inset;} /* 统一下拉的边框 */
+        textarea {overflow:auto;vertical-align:text-bottom;*vertical-align:auto;border:1px solid;resize:vertical;} /* 滚动条为auto，与周边的元素对齐方式，其中hack部分是IE6&7中vertical-align影响范围清除，resize为上下可拉动，避免左右拉动破坏页面布局，如有需要可以设置为none */
+
+        /*===== 设置表格元素的样式 =====*/
+        table {border-spacing:0;} /* 合并表格的间隙，去掉单元格之间的间距，如有需要合并单元格为细线表格，可增加 border-collapse:collapse; */
+        td, th, caption {padding:0;} /* 去除单元格以及caption表头的padding值 */
+
+        /*===== banner =====*/
+        .banner img{width: 100%;height: auto;}
+
+        /*==== nav =====*/
+       .flex{display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex; font-size: .32rem;font-weight: 600;}
+        #nav ul{padding:0 .25rem;justify-content: space-between;height: .94rem;line-height: .94rem;border-bottom: .01rem solid #ddd;}
+        #nav ul>li{text-align: center; cursor: pointer;}
+        #nav ul>li.oncolor{color: #49c7b0;}
+        /*====== tabcon ======*/
+        .tabcon{padding: .25rem;}
+        /*===== tab-pal1 =====*/
+        .tab-pal1 p{font-size: .28rem; }
+        .tab-pal1-title{width: 100%;height:1rem;line-height:1rem;margin:.3rem 0;text-align: center; font-size: .36rem;color: #fff; background-color:#69addf; }
+        .tab-pal1-list{justify-content: space-between; font-size: .32rem;font-weight: normal;}
+        .tab-pal1-list ul{width: 48%;}
+        .tab-pal1-list ul li{height:.87rem;line-height: .87rem;margin-bottom:.32rem;text-align:center;border: .01rem solid #ddd;background-color:#fbfbfb;  }
+
+       /* ==== tab-pal2,3 ===*/
+        .tab-pal2 ul li,.tab-pal3 ul li{height: .77rem;line-height: .77rem;padding-left:.24rem;border-bottom: .01rem dashed #ddd;font-size: .32rem; background-image:url("imgs/dot.gif");background-repeat: no-repeat;background-position:left center;overflow: hidden;  text-overflow: ellipsis;  white-space: nowrap;}
+        .tab-pal2 ul li a,.tab-pal3 ul li a{color: #000;}
+    </style>
+</head>
+<body>
+<div id="app">
+	<!-- / banner start-->
+    <div class="banner">
+        <img src="imgs/banner.gif" alt="">
+    </div>
+    <!-- * banner end-->
+    <!--/ 导航 start-->
+    <div id="nav">
+        <ul class="flex">
+            <li @click="curId=0" :class="{'oncolor':curId===0}">投诉举报热线</li>
+            <li @click="curId=1" :class="{'oncolor':curId===1}">投诉回复选登</li>
+            <li @click="curId=2" :class="{'oncolor':curId===2}">消费提示</li>
+        </ul>
+    </div>
+    <!--* 导航 end-->
+    <!--/ 内容-->
+    <div class="tabcon">
+        <div class="tab-pal1" v-show="curId===0" >
+        <p>
+            {{jbcon}}
+        </p>
+            <div class="tab-pal1-title">
+              {{title}}
+            </div>
+            <div class="tab-pal1-list flex">
+                <ul>
+                    <li v-for="tel in tel1">{{tel}}</li>
+                </ul>
+                <ul>
+                    <li v-for="tel in tel2">{{tel}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-pal2" v-show="curId===1">
+            <ul>
+                <li v-for="(item,key) in pal2"><a :href="item">{{key}}</a></li>
+            </ul>
+        </div>
+        <div class="tab-pal3" v-show="curId===2">
+            <ul>
+                <li v-for="(item,key) in pal3"><a :href="item">{{key}}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <!--* 内容-->
+  <script src="js/vue.min.js"></script>
+  <script type="text/javascript">
+	new Vue({
+		el:"#app",
+		data:{
+			title:"  各区工商分局12315投诉举报中心电话",
+			curId:0,
+			jbcon:"如您有紧急、重要的举报、投诉信息或进行有关消费者权益保护的法律、法规的咨询，请拨打'12315'或各区12315中心的电话反映。北京市工商局12315投诉举报中心电话：12315",
+			tel1:[
+				"东   城：84082826",
+                "朝   阳：52012315",
+                "丰   台：63712315",
+                "通   州：69512315",
+                "昌   平：80112315",
+                "怀   柔：69653125",
+                "密   云：89012315",
+                "燕   山：69336444",
+                "门头沟：69812315"
+			],
+			tel2:[
+				 "西   城：88087520",
+                 "海   淀：62612315",
+                 "房   山：69312315",
+                 "顺   义：89412315",
+                 "大   兴：60212315",
+                 "平   谷：69912315",
+                 "延   庆：61112315",
+                 "石景山：88912315"
+			],
+			pal2:{
+				"空调漏水将地板泡坏是否可以投诉？":"http://mp.weixin.qq.com/s/pmXa88JlG_AaGfigd2Kd9Q",
+				"没有约定保修期怎么办？":"http://mp.weixin.qq.com/s/uYuyAHz3CI-Dta81BGrxWw",
+				"手机的发票丢失还能保修吗？":"http://mp.weixin.qq.com/s/pmXa88JlG_AaGfigd2Kd9Q",
+				"手机送修后可以要求维修点提供备用机吗？":"http://mp.weixin.qq.com/s/jV8cVNaLX6ew6nA4yzFtew" 
+				},
+			pal3:{
+				"螃蟹来“袭”，消费有度":"http://mp.weixin.qq.com/s/HcH-erege4qv4btqgeKlSg",
+				"热水器消费提示":"http://mp.weixin.qq.com/s/GYF8bTwH5D2XRYCTQWQrgg",
+				"消费有风险 单方毁约可维权":"http://mp.weixin.qq.com/s/WPwvFKlYl17rt4uNUDbrYA",
+				"衣服遭破相，维权获赔偿":"http://mp.weixin.qq.com/s/2ukPz0E2lyv9JoamcDOWUQ"
+			}
+		},
+		methos:{
+		
+		},
+
+
+
+	})
+
+
+
+
+  </script>
+</body>
+</html>
